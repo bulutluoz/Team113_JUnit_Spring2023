@@ -74,5 +74,6 @@ public class C02_SwitchingWindows extends TestBase {
         actualTitle = driver.getTitle();
 
         Assert.assertEquals(expectedTitle,actualTitle);
+        Thread.sleep(3000);
     }
 }
