@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.*;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 import java.io.File;
@@ -37,5 +38,7 @@ public class C03_TumSayfaScreenshot extends TestBase {
         File geciciResim = tss.getScreenshotAs(OutputType.FILE);
 
         FileUtils.copyFile(geciciResim,tumSayfaResim);
+
+        ReusableMethods.tumSayfaFotografCek(driver);
     }
 }
